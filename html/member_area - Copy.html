@@ -1,0 +1,48 @@
+<?php $getUser = getUserById($_SESSION['id']);
+?>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="cssmenu">
+                    <ul>
+                      <li ><a href='#'>Home</a></li>
+                      <li><a href='#'>About us</a></li>
+                      <li class='active'><a href='#'>Blog</a></li>
+                      <li><a href='#'>Contact</a></li>
+                      <li class="stanga"><a href='#'>Register</a></li>
+                      <li class="totstanga"><a href="#">|</a></li >
+                      <li class="totstangaa"><a href="#">Login</a></li  >
+                    </ul>
+                  </div>
+<img src="img/profil.jpg" class="bloggy">
+  <div class="profilepic"></div>
+  <div class="uploadpic"> 
+  	<button type="button">Upload file</button>
+
+  </div>
+  <div class="userpanel">
+
+  <span class="welcome">Welcome, </span>
+  	  <p class="profilex" id="name">Name: </p>
+	  <p class="profilex">Age: </p>
+	  <p class="profilex">Email: </p>
+	  <p class="profilex">Telephone: </p> 
+	  <p class="profilex">Facebook: </p>
+	  <p class="profilex">Twitter: </p>
+	  <p class="profilex">Yahoo messenger: </p>
+  </div>
+<form action="index.php?pagina=member_area" method="POST" enctype="multipart/form-data">
+    File: <input type="file" name="small_img"/> <input name="submit_image" type="submit" value="Upload image" />
+</form>
+<div height="400" width="400">
+    <?php echo $getUser['photo'];?><br>
+</div>
+<img src="images/<?php echo $getUser['photo'];?>" width="180" height="180" />
+<form method="post" action="">
+    <input type="text" name="facebook" id="facebook" value="<?php echo $getUser['facebook'];?>" />
+    <input type="text" name="twitter" id="twitter" value="<?php echo $getUser['twitter'];?>"  />
+    <input type="text" name="yahoo" id="yahoo" value="<?php echo $getUser['yahoo'];?>"  />
+    <input type="text" name="phone" id="phone" value="<?php echo $getUser['phone'];?>"  />
+    <input type="submit" name="submit_profile" />
+</form>
