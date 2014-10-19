@@ -61,7 +61,7 @@ if(isset($_POST['intrebariblog'])){
 
 					include "html/homepage.html";
 				}
-				else if ($pagina != 'homepage' && $pagina != 'register' && $pagina != 'login' && $pagina != 'member_area' && $pagina != 'blog') {
+				else if ($pagina != 'homepage' && $pagina != 'register' && $pagina != 'login' && $pagina != 'member_area' && $pagina != 'blog' && $pagina != 'contact')  {
 					include "html/error.html";
 
 				}

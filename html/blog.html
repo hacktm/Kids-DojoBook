@@ -23,23 +23,20 @@
 
     </head>
 <body>
-        <div class="cssmenu">
-                    <ul>
-                      <li ><a href='http://localhost/index.php?pagina=homepage'>Home</a></li>
-                     
-                      <li class='active'><a href='http://localhost/index.php?pagina=blog'>Blog</a></li>
-                      <li><a href='#'>Contact</a></li>
-                      <li class="stanga"><a href='http://localhost/index.php?pagina=login'>Register</a></li>
-                      <li class="totstanga"><a href="#">|</a></li >
-                      <li class="totstangaa"><a href="http://localhost/index.php?pagina=login">Login</a></li  >
-                    </ul>
-                  </div>
-
-
-
+       
 
 			<div class="principalul">
-
+        <form method="post" action="">
+  <center id ="centrublog"><input type="text" name="addQuestion" value="" id="inputquestion" />
+  <input type="submit" name="intrebariblog"  id="sunt"/></center>
+</form>
+<?php $getQuestions = scuipaBlog();
+  foreach($getQuestions as $item){
+?>
+    <div class="question">
+      <?php echo $item['intrebare']; ?>
+    </div>
+<?php } ?>
 
 
 

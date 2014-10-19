@@ -47,31 +47,42 @@ body{
 
 }
 
-.logo{
-	
-	margin-top: -200px;
-	margin-left: 50%;
+.logoul{
+
+height: 200px;
+width: 150px;
+
+
 }
 
-.logo img{
-	background-image: url('../imagini/butonjos1.png');
-	width: 52px;
-	height: 52px;
-	border: 0px;
-}
 
-.logo img:hover{
-	background-image: url('../imagini/butonjos2.png');
-}
 
 .intro{
 
-	margin-left: 820px;
-	margin-top: -380px;
+	margin-left: 730px;
+	margin-top: -780px;
 	color: white;
 	font-family: tahoma;
 	font-size: 30px;
 	margin: right;
+}
+
+.introo{
+
+  margin-left: 730px;
+  margin-top: -700px;
+  color: white;
+  font-family: tahoma;
+  font-size: 30px;
+  float: right;
+}
+
+.textulett{
+
+  margin-left: 150px;
+  font-weight: 10px;
+  color: #D02424;
+
 }
 
 .textulet{
@@ -251,7 +262,7 @@ body{
 
 .totstanga{
 
-	margin-right: -20px;
+	margin-right: -80px;
 
 }
 
@@ -615,9 +626,9 @@ color:#424242;
   height: 25px;
     width: 100px;
   border-radius: 5px;
-  margin-left: 90px;
+  margin-left: 135px;
   color: white;
-  margin-top: 30px;
+  margin-top: 160px;
 }
 
 .login{
@@ -646,6 +657,9 @@ height: 3000px;
 background-color: #f7f7f7;
 margin: auto;
 font-family: tahoma;
+border-left: dashed;
+border-right: dashed;
+border-bottom: dashed;
 }
 
 
@@ -673,18 +687,8 @@ background color: red;
 .aleadoua{
 
    margin-left: 30px;
-}
-
-#submit1{
-
-  background-color:#424242;
-  height: 25px;
-    width: 100px;
-  border-radius: 5px;
- margin-left:-100px;
-  color: white;
-  margin-left: 140px;
-  margin-top: 30px;  
+   margin-bottom: -60px;
+   margin-top: 90px;
 }
 
 
@@ -711,4 +715,171 @@ margin-left: 20px;
 #pass
 {
   border-radius: 5px;
+}
+
+#submit1 {
+
+  background-color:#424242;
+  height: 25px;
+    width: 100px;
+  border-radius: 5px;
+  margin-left: 100px;
+  color: white;
+  margin-top: 70px;
+}
+
+.toot{
+  width: 100%;
+  
+  height: 800px;
+}
+
+h2{
+
+  font-family: tahoma;
+  color: #D02424;
+  font-size: 80px;
+  margin-top: -780px;
+  margin-left: 500px;
+
+
+}
+.chenar{
+  background-color:#424242;
+  opacity: 0.6;
+  margin-left:10%;
+  margin-top:-190px;
+  height:800px;
+  width: 300px;
+  position:relative;
+  padding-left:7px;
+}
+.administratori{
+font-size:25px;
+color:white;
+font-family:Tahoma;
+font-weight:bold;
+padding-top: 100px;
+padding-left: ;
+
+}
+.members{
+  font-size:17px;
+  color:white;
+}
+
+#centrublog{
+
+  padding-top: 40px;
+
+}
+
+#inputquestion{
+
+  width: 300px;
+  height: 50px;
+}
+
+#sunt{
+
+   background-color:#424242;
+  height: 25px;
+    width: 100px;
+  border-radius: 5px;
+  
+  color: white;
+  
+
+}
+
+.question{
+
+  position: center;
+
+}
+
+.profilepic{
+  height:300px;
+  width:300px;
+  background-color:#424242;
+  margin-top: -350px;
+  margin-left: 4%; 
+  position: relative;
+  border-radius:3px;
+}
+.uploadpic{
+  /**/
+  margin-top: 30px;
+  margin-left: 17%; 
+  position: relative;
+
+}
+.userpanel{
+ height:270px;
+  width:900px;
+  border-radius:15px;
+  background-color:#424242;
+  margin-top:-690px;
+  margin-left: 32%; 
+  position: relative;
+  opacity: 0.4;
+  padding-left: 15px;
+  padding-top: 15px;
+
+}
+.welcome{
+  font-family:Verdana;
+  font-size:25px;
+  color:white;
+}
+.profilex{
+  font-family:Verdana;
+  font-size:25px;
+  color:white;
+  position: relative;
+  margin-left: 5px;
+
+}
+.butt{
+  margin-left: 10%;
+margin-top: 30px;
+}
+.pagino{
+  height:900px;
+  width:100%;
+}
+#butonila{
+   background-color:#424242;
+  height: 25px;
+    width: 100px;
+  border-radius: 5px;
+  
+  color: white;
+  
+}
+
+#twitter{
+  margin-left:2.8%;
+}
+#yahoo{
+  margin-left:4%;
+}
+#facebook{
+  margin-left:-0.5%;
+}
+#phone{
+  margin-left:4%;
+}
+
+.urcare{
+
+  margin-top: 20px;
+
+}
+
+.linkuri{
+
+  margin-top: -250px;
+  margin-left: 440px;
+  color: red;
 }

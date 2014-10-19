@@ -1,4 +1,8 @@
 <?php
+
+// Turn off all error reporting
+error_reporting(0);
+
 function register($arr){
 	global $link;
 	extract($arr);
@@ -34,6 +38,8 @@ function login($arr){
 	}
 }
 function bagapoza($arr){
+
+	var_dump($_FILE);
 	global $link;
 	$target = "images/"; 
     $target = $target . basename( $arr['small_img']['name']); 
@@ -68,14 +74,22 @@ function modifyProfile($arr_data,$id){
 	$sql = "UPDATE `users` SET `facebook`='$facebook', `twitter`='$twitter', `yahoo`='$yahoo', `phone`='$phone' WHERE `id`='$id'";
 	mysqli_query($link, $sql) or die ("Account not added in Database.");
 } 
-function intrebariblog(){
+function intrebariblog($arr){
 	global $link;
+	extract($arr);
 	$sql = "INSERT INTO `question` VALUES('', '$addQuestion')";
 	$res = mysqli_query($link, $sql) or die ("Question not added in Database.");
 
 }
 function  scuipaBlog(){
-	$sql = "SELECT * FROM `question` WHERE `intrebare` = '$intrebare'";
+	global $link;
+	$sql = "SELECT * FROM `question`";
 	$res = mysqli_query($link, $sql) or die ("That question doesn't exists.");
+	$data=array();
+	while($row=mysqli_fetch_assoc($res)){
+		array_push($data,$row);
+	}
+	return $data;
 }
 ?>
+

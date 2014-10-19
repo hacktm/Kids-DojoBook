@@ -1,20 +1,41 @@
 <?php $getUser = getUserById($_SESSION['id']);
 ?>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="cssmenu">
+                    <ul>
+                      <li ><a href='http://localhost/index.php?pagina=homepage'>Home</a></li>
+                      <li class='active'><a href='http://localhost/index.php?pagina=blog'>Blog</a></li>
+                      <li><a href='http://localhost/index.php?pagina=contact'>Contact</a></li>
+                      <li class="stanga"><a href='http://localhost/index.php?pagina=login'>Register</a></li>
+                      <li class="totstanga"><a href="#">|</a></li >
+                      <li class="totstangaa"><a href="http://localhost/index.php?pagina=login">Login</a></li  >
+                    </ul>
+                  </div>
+<img src="imagini/yuup.jpg" class="pagino">  
+  <div class="userpanel">
+<form method="post" action="">
+    <span class="profilex">Facebook: </span><input type="text" name="facebook" id="facebook" value="<?php echo $getUser['facebook'];?>" /><br><br>
+    <span class="profilex">Twitter: </span><input type="text" name="twitter" id="twitter" value="<?php echo $getUser['twitter'];?>"  /><br><br>
+    <span class="profilex">Yahoo: </span><input type="text" name="yahoo" id="yahoo" value="<?php echo $getUser['yahoo'];?>"  /><br><br>
+    <span class="profilex">Phone number: </span><input type="text" name="phone" id="phone" value="<?php echo $getUser['phone'];?>"  /><br><br>
+    <input type="submit" name="submit_profile" id="rock"/>
+</form>
+  </div>
+<?php $getUser = getUserById($_SESSION['id']);
+?>
 <form action="index.php?pagina=member_area" method="POST" enctype="multipart/form-data">
-    File: <input type="file" name="small_img"/> <input name="submit_image" type="submit" value="Upload image" />
+    <div class="urcare">File: <input type="file" name="small_img"/> <input name="submit_image" type="submit" value="Upload image" />
 </form>
 <div height="400" width="400">
     <?php echo $getUser['photo'];?><br>
 </div>
-<img src="images/<?php echo $getUser['photo'];?>" width="180" height="180" />
-<form method="post" action="">
-    <input type="text" name="facebook" id="facebook" value="<?php echo $getUser['facebook'];?>" />
-    <input type="text" name="twitter" id="twitter" value="<?php echo $getUser['twitter'];?>"  />
-    <input type="text" name="yahoo" id="yahoo" value="<?php echo $getUser['yahoo'];?>"  />
-    <input type="text" name="phone" id="phone" value="<?php echo $getUser['phone'];?>"  />
-    <input type="submit" name="submit_profile" />
-</form>
+<div class="profilepic">
+<img src="images/<?php echo $getUser['photo'];?>" width="300" height="300s" />
+</div>
+</div>
+</div>
+</body>
 
-<form>
-    <input type="text" name="">
-</form>
